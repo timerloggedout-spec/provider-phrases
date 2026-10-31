@@ -35,8 +35,68 @@
    }
   }
  },
+ "evaluation_dimensions": [
+  {
+   "kind": "casing/token-form ladder",
+   "example": "do -> d0 | DO | Do | do",
+   "note": "One example stands for the whole kind (owner, 2026-10-31); rungs are factor levels, ranked by runs, never asserted as precedence. Applied via phrase_layer token_forms."
+  },
+  {
+   "kind": "substitution scope",
+   "levels": [
+    "vowels-only (established)",
+    "wider consonant sets",
+    "full dictionary tables"
+   ]
+  },
+  {
+   "kind": "substitution depth",
+   "levels": [
+    "first variant",
+    "alternates"
+   ]
+  },
+  {
+   "kind": "placement",
+   "levels": [
+    "prefix",
+    "suffix",
+    "prefix+suffix"
+   ]
+  },
+  {
+   "kind": "selection",
+   "levels": [
+    "first",
+    "hash",
+    "rotated"
+   ]
+  },
+  {
+   "kind": "timing / when-to-use",
+   "levels": [
+    "always",
+    "per-role",
+    "per-context",
+    "profile-gated"
+   ]
+  },
+  {
+   "kind": "profile composition",
+   "levels": [
+    "lists",
+    "named profile"
+   ]
+  },
+  {
+   "kind": "emoji-sequence inclusion",
+   "levels": [
+    "in",
+    "out"
+   ]
+  }
+ ],
  "open_questions": [
-  "Substitution precedence ladder d0 > DO > Do > do — NOT ESTABLISHED; admitted as a design factor (phrase_form) for live runs to settle, per DoE doctrine.",
   "Phrase sets for non-DeepSeek providers: NOT ESTABLISHED (owner appends per provider)."
  ]
 }
